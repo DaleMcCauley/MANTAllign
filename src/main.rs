@@ -2,8 +2,8 @@ mod bwt;
 mod parsers;
 /*Flow of program. Functions will be filled out as I develop the program */
 fn main() {
-    let reference_fa = parsers::fasta::fasta_parse("reference.fasta");
-    print!("{:?}", reference_fa);
+    let reference_fq = parsers::fastq::fastq_parse("/home/dale/rust/projects/MANTAllign/samples/trimmed_reads.fastq");
+    print!("{:?}", reference_fq);
     //let input = takeinput();
 /* 
     match input { 
