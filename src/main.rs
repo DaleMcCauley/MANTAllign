@@ -1,9 +1,9 @@
 mod bwt;
-
+mod parsers;
 /*Flow of program. Functions will be filled out as I develop the program */
 fn main() {
-  
-    
+    let reference_fa = parsers::fasta::fasta_parse("reference.fasta");
+    print!("{:?}", reference_fa);
     //let input = takeinput();
 /* 
     match input { 
