@@ -1,17 +1,10 @@
-
-
-
-
-
-
 mod bwt;
 mod index_builder;
-
 mod parsers;
 
 pub fn main() {
 
-    let reference = crate::parsers::fasta::fasta_parse("/home/dale/rust/projects/MANTAllign/samples/reference.fasta");
+    let reference = crate::parsers::fasta::fasta_parse("./samples/reference.fasta");
     let ref_index = crate::index_builder::index_builder::index_builder(& reference[0].sequence, 20);
     println!("{:?}", ref_index.fm_sections);
     
