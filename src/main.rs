@@ -8,7 +8,7 @@ mod bwt;
 mod index_builder;
 
 mod parsers;
-/*Flow of program. Functions will be filled out as I develop the program */
+
 pub fn main() {
 
     let reference = crate::parsers::fasta::fasta_parse("/home/dale/rust/projects/MANTAllign/samples/reference.fasta");
